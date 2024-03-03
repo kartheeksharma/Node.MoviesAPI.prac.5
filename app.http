@@ -1,0 +1,36 @@
+
+//3 ashtags for send req to appear
+//one line gap between content and body 
+GET http://localhost:3001/movies/
+###
+
+POST http://localhost:3001/movies/
+Content-Type: application/json
+
+{
+    "directorId":6,
+    "movieName": "Jurassic Park",
+    "leadActor": "Jeff Goldblum"
+}
+
+###
+GET http://localhost:3001/movies/106/ 
+
+###
+PUT http://localhost:3001/movies/106/ 
+Content-Type: application/json
+
+{
+    "directorId":24,
+    "movieName": "Thor",
+    "leadActor": "Christopher"
+}
+
+###
+DELETE  http://localhost:3001/movies/58/ 
+
+###
+GET http://localhost:3001/directors/
+
+###
+GET http://localhost:3001/directors/30/movies/ 
